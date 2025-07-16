@@ -1,0 +1,56 @@
+{
+  "countries": [
+    { "id": 1, "nombre": "USA", "bandera": "https://flagcdn.com/w320/us.png", "cantidad": 24},
+    { "id": 2, "nombre": "China", "bandera": "https://flagcdn.com/w320/cn.png", "cantidad": 13 },
+    { "id": 3, "nombre": "Japan", "bandera": "https://flagcdn.com/w320/jp.png", "cantidad": 11 },
+    { "id": 4, "nombre": "Germany", "bandera": "https://flagcdn.com/w320/de.png", "cantidad": 4 },
+    { "id": 5, "nombre": "Australia", "bandera": "https://flagcdn.com/w320/au.png" , "cantidad": 11},
+    { "id": 6, "nombre": "Russia", "bandera": "https://flagcdn.com/w320/ru.png" , "cantidad": 13},
+    { "id": 7, "nombre": "United Kingdom", "bandera": "https://flagcdn.com/w320/gb.png" , "cantidad": 11},
+    { "id": 8, "nombre": "France", "bandera": "https://flagcdn.com/w320/fr.png", "cantidad": 10 }
+  ],
+  "disciplines": [
+    { "id": 1, "nombre": "Athletics","cantidad": 10, "icono": "https://cdn-icons-png.flaticon.com/128/384/384205.png"},
+    { "id": 2, "nombre": "Swimming","cantidad": 8 , "icono": "https://cdn-icons-png.flaticon.com/128/4721/4721069.png" },
+    { "id": 3, "nombre": "Gymnastics", "cantidad": 7, "icono": "https://cdn-icons-png.flaticon.com/128/18393/18393321.png"},
+    { "id": 4, "nombre": "Basketball","cantidad": 5, "icono": "https://cdn-icons-png.flaticon.com/128/15179/15179788.png" },
+    { "id": 5, "nombre": "Wrestling","cantidad": 5, "icono": "https://cdn-icons-png.flaticon.com/128/3115/3115578.png" },
+    { "id": 6, "nombre": "Weightlifting","cantidad": 15, "icono": "https://cdn-icons-png.flaticon.com/128/1275/1275413.png" },
+    { "id": 7, "nombre": "Diving", "cantidad": 8, "icono": "https://cdn-icons-png.flaticon.com/128/4972/4972190.png"},
+    { "id": 8, "nombre": "Table Tennis", "cantidad": 9, "icono": "https://cdn-icons-png.flaticon.com/128/2397/2397906.png"}
+  ],
+  "medals": [
+  { "id": 1, "countryId": 1, "disciplineId": 1, "tipo": "Gold", "cantidad": 10 },
+  { "id": 2, "countryId": 1, "disciplineId": 1, "tipo": "Silver", "cantidad": 10 },
+  { "id": 3, "countryId": 1, "disciplineId": 1, "tipo": "Bronze", "cantidad": 8 },
+
+  { "id": 4, "countryId": 2, "disciplineId": 2, "tipo": "Gold", "cantidad": 12 },
+  { "id": 5, "countryId": 2, "disciplineId": 2, "tipo": "Silver", "cantidad": 9 },
+  { "id": 6, "countryId": 2, "disciplineId": 2, "tipo": "Bronze", "cantidad": 6 },
+
+  { "id": 7, "countryId": 3, "disciplineId": 3, "tipo": "Gold", "cantidad": 7 },
+  { "id": 8, "countryId": 3, "disciplineId": 3, "tipo": "Silver", "cantidad": 4 },
+  { "id": 9, "countryId": 3, "disciplineId": 3, "tipo": "Bronze", "cantidad": 2 },
+
+  { "id": 10, "countryId": 4, "disciplineId": 4, "tipo": "Gold", "cantidad": 5 },
+  { "id": 11, "countryId": 4, "disciplineId": 4, "tipo": "Silver", "cantidad": 4 },
+  { "id": 12, "countryId": 4, "disciplineId": 4, "tipo": "Bronze", "cantidad": 8 },
+
+  { "id": 13, "countryId": 5, "disciplineId": 5, "tipo": "Gold", "cantidad": 4 },
+  { "id": 14, "countryId": 5, "disciplineId": 5, "tipo": "Silver", "cantidad": 3 },
+  { "id": 15, "countryId": 5, "disciplineId": 5, "tipo": "Bronze", "cantidad": 8 },
+
+  { "id": 16, "countryId": 6, "disciplineId": 6, "tipo": "Gold", "cantidad": 3 },
+  { "id": 17, "countryId": 6, "disciplineId": 6, "tipo": "Silver", "cantidad": 2 },
+  { "id": 18, "countryId": 6, "disciplineId": 6, "tipo": "Bronze", "cantidad": 8 },
+
+  { "id": 19, "countryId": 7, "disciplineId": 7, "tipo": "Gold", "cantidad": 2 },
+  { "id": 20, "countryId": 7, "disciplineId": 7, "tipo": "Silver", "cantidad": 2 },
+  { "id": 21, "countryId": 7, "disciplineId": 7, "tipo": "Bronze", "cantidad": 8 },
+
+  { "id": 22, "countryId": 8, "disciplineId": 8, "tipo": "Gold", "cantidad": 1 },
+  { "id": 23, "countryId": 8, "disciplineId": 8, "tipo": "Silver", "cantidad": 1 },
+  { "id": 24, "countryId": 8, "disciplineId": 8, "tipo": "Bronze", "cantidad": 8 }
+]
+
+}
