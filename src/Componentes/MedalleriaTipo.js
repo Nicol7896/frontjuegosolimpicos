@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import '../Css/medallas.css'
 
 function MedalleriaTipo() {
-  const { tipo, paisId } = useParams(); // ej: 'oro', '1'
+  const { tipo, paisId } = useParams(); 
   const navigate = useNavigate();
 
   const [medallas, setMedallas] = useState([]);
@@ -22,12 +23,11 @@ function MedalleriaTipo() {
       .then(res => setDisciplinas(res.data));
   }, []);
 
-  // Filtrar por país y tipo
+ 
   const medallasFiltradas = medallas.filter(
     m => m.countryId === parseInt(paisId) && m.tipo === tipoReal
   );
 
-  // Contar por disciplina
   const conteoPorDisciplina = {};
   medallasFiltradas.forEach(m => {
     conteoPorDisciplina[m.disciplineId] = (conteoPorDisciplina[m.disciplineId] || 0) + (m.cantidad || 1);
@@ -36,7 +36,7 @@ function MedalleriaTipo() {
   return (
     <div style={{ padding: '1rem' }}>
       <button onClick={() => navigate(-1)}>⬅ Volver</button>
-      <h2>Medallería por Disciplina – 🏅 {tipoCapitalizado}</h2>
+      <h2>🏅 {tipoCapitalizado}</h2>
 
       <table border="1" cellPadding="8" style={{ borderCollapse: 'collapse', width: '100%', textAlign: 'center' }}>
         <thead>

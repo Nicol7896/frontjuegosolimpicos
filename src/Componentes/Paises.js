@@ -18,7 +18,7 @@ function Paises() {
 
   return (
     <div className="paises-container">
-      <button onClick={() => navigate(-1)}>⬅ Volver</button>
+      <button onClick={() => navigate(-1)} className="volver">⬅ Volver</button>
       <h2>Listado de Países</h2>
       <ul>
         {paises.map(countries => (

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import '../Css/medallas.css'
 
 function DisciplinaPais() {
-  const { id } = useParams(); // ID de la disciplina
+  const { id } = useParams(); 
   const navigate = useNavigate();
 
   const [disciplina, setDisciplina] = useState(null);
@@ -11,17 +12,16 @@ function DisciplinaPais() {
   const [paises, setPaises] = useState([]);
 
   useEffect(() => {
-    // Obtener la disciplina
+  
     axios.get(`http://localhost:3000/disciplines/${id}`)
       .then(res => setDisciplina(res.data))
       .catch(err => console.error('Error cargando disciplina:', err));
 
-    // Obtener todas las medallas
     axios.get('http://localhost:3000/medals')
       .then(res => setMedallas(res.data))
       .catch(err => console.error('Error cargando medallas:', err));
 
-    // Obtener todos los países
+   
     axios.get('http://localhost:3000/countries')
       .then(res => setPaises(res.data))
       .catch(err => console.error('Error cargando países:', err));
@@ -30,7 +30,6 @@ function DisciplinaPais() {
   return (
     <div style={{ padding: '1rem' }}>
       <button onClick={() => navigate(-1)}>⬅ Volver</button>
-      <h3>Medallería por país</h3>
 
       <table border="1" cellPadding="8" style={{ borderCollapse: 'collapse', width: '100%', textAlign: 'center' }}>
         <thead>

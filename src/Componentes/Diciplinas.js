@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
+import '../Css/Paises.css'
 function Disciplinas() {
   const [disciplines, setDisciplinas] = useState([]);
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ function Disciplinas() {
 
   return (
     <div className="paises-container">
-      <button onClick={() => navigate(-1)}>⬅ Volver</button>
+      <button onClick={() => navigate(-1)} className="volver">⬅ Volver</button>
       <h2>Listado de Disciplinas</h2>
       <ul>
         {disciplines.map(disciplines => (
